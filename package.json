@@ -1,0 +1,35 @@
+{
+  "name": "suika",
+  "version": "0.1.2",
+  "description": "Dual-pane S3 terminal file manager",
+  "license": "MIT",
+  "author": "Abuzar Shaikh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaikhAbuzar/suika.git"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test tests/",
+    "build": "bun build --compile src/index.tsx --outfile suika"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1089.0",
+    "@aws-sdk/credential-providers": "3.1089.0",
+    "@aws-sdk/lib-storage": "3.1089.0",
+    "@aws-sdk/s3-request-presigner": "3.1089.0",
+    "@opentui/core": "0.4.4",
+    "@opentui/react": "0.4.4",
+    "@smithy/shared-ini-file-loader": "4.6.10",
+    "react": "19.2.4",
+    "zustand": "5.0.14"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.14",
+    "@types/node": "26.1.1",
+    "@types/react": "19.2.17",
+    "typescript": "5.9.3"
+  }
+}
